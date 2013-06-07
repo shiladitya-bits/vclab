@@ -1,0 +1,154 @@
+package ekshiksha.vclab.screens;
+
+import java.util.ArrayList;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.GL10;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
+
+import ekshiksha.vclab.VCLabStarter;
+import ekshiksha.vclab.equipment.Beaker;
+import ekshiksha.vclab.equipment.Equipment;
+import ekshiksha.vclab.parser.XMLReader;
+import ekshiksha.vclab.parser.XMLWriter;
+
+public class HomePage implements Screen {
+	VCLabStarter vclab;
+	Stage stage;
+	SpriteBatch batch;
+	Beaker beaker,beaker_copy;
+	Image beaker_img,beaker_copy_image;
+	private OrthographicCamera camera;
+	
+	public HomePage(VCLabStarter vclab) {
+		this.vclab = vclab;				
+	}
+	@Override
+	public void render(float delta) {
+		Gdx.gl.glClearColor(1, 1, 1, 1);
+		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		stage.act(delta);
+		batch.begin();
+		stage.draw();
+		batch.end();
+	}
+
+	@Override
+	public void resize(int width, int height) {
+		Gdx.gl.glClearColor(1, 1, 1, 1);
+		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
+	
+		batch.setProjectionMatrix(camera.combined);
+		batch.begin();
+		stage.act();
+		batch.end();
+
+		}
+
+	@Override
+	public void show() {
+
+		float w = Gdx.graphics.getWidth();
+		float h = Gdx.graphics.getHeight();
+		camera = new OrthographicCamera(1, h/w);
+		batch = new SpriteBatch();
+	
+		Texture test_beaker = new Texture(Gdx.files.internal("data/beaker.jpg"));
+		beaker = new Beaker(test_beaker);
+		stage = new Stage();
+		Gdx.input.setInputProcessor(stage);
+		
+		beaker_img = beaker.getImage();
+		beaker_img.setTouchable(Touchable.enabled);
+		beaker_img.setWidth(64);
+		beaker_img.setHeight(64);
+		beaker_img.setBounds(100,100,beaker_img.getWidth(),beaker_img.getHeight());
+		
+		beaker_img.addListener(new InputListener()
+		{
+			@Override
+	        public boolean touchDown (InputEvent event, float x, float y, int pointer, int button) {
+				Texture test_beaker = new Texture(Gdx.files.internal("data/beaker.jpg"));
+				beaker_copy = new Beaker(test_beaker);    	
+				beaker_copy_image = beaker_copy.getImage();
+				beaker_copy_image.setWidth(64);
+				beaker_copy_image.setHeight(64);
+				beaker_copy_image.setVisible(false);
+				//beaker_copy_image.setBounds(100,100,beaker_img.getWidth(),beaker_img.getHeight());
+								
+				return true;
+	        }
+	        @Override
+	        public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
+               if(x<250)
+               {
+            	   //beaker_copy_image.setVisible(false);
+            	   beaker_copy_image.remove();
+               }
+            	   
+	        }
+			@Override
+			public void touchDragged(InputEvent event, float x, float y,int pointer) {
+				beaker_copy_image.addAction(Actions.moveTo(x,y));
+				beaker_copy_image.setVisible(true);
+				stage.addActor(beaker_copy_image);		
+				System.out.println("touch dragged "+x+" "+y);
+	        	
+			}
+
+			@Override
+			public void enter(InputEvent event, float x, float y, int pointer,Actor fromActor) {
+	        	//System.out.println("enter");
+			}
+
+			@Override
+			public void exit(InputEvent event, float x, float y, int pointer,Actor toActor) {
+			 	//System.out.println("exit");
+				
+			}
+			@Override
+			public boolean mouseMoved(InputEvent event, float x, float y) {
+				//System.out.println("mouse moved");
+				return super.mouseMoved(event, x, y);
+			}
+	        
+		});
+		stage.addActor(beaker_img);
+		
+		//reading the sample test xml
+		XMLReader reader_obj = 	new XMLReader("data/xml_files/equipments.xml",XMLReader.TYPE_EQUIPMENT);
+		//fetching the parsed objects
+		ArrayList<Equipment> list = reader_obj.getArrayListComponents();
+		//writing the parsed objects
+		XMLWriter.write("written_file.xml", list, XMLReader.TYPE_EQUIPMENT);
+		//XMLWriter.write("assets/data/xml_files/written_file.xml", list, XMLReader.TYPE_EQUIPMENT);
+
+	}
+
+	@Override
+	public void hide() {
+	}
+
+	@Override
+	public void pause() {
+	}
+
+	@Override
+	public void resume() {
+	}
+
+	@Override
+	public void dispose() {
+	}
+
+}

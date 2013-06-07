@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Color"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.ui.Label"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.utils.XmlReader"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.utils.XmlWriter"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.InputEvent"/>
+<fullyQualifiedTypeName name="ekshiksha.vclab.parser.XMLWriter"/>
+<fullyQualifiedTypeName name="ekshiksha.vclab.parser.XMLReader"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Pixmap.Format"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.ui.Image"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,15 @@
+<Specification SpecificationAuthor="Shiladitya" Title="Virtual Chemistry Lab">
+	<Header Title="2" Author="2" Level="2" Marks="2" Description="2" Student="2" Instruction="2"/>
+	<Setup>
+		<Equipment Type="Burette"/>
+		<Equipment Type="Pipette"/>
+		<Equipment Type="Flask"/>
+		<Equipment Type="Beaker"/>
+		<Equipment Type="Burner"/>
+		<Equipment Type="Bottle"/>
+		<Equipment Type="Bottle"/>
+		<Equipment Type="Beaker"/>
+		<Equipment Type="TestTube"/>
+		<Equipment Type="Pipette"/>
+	</Setup>
+</Specification>

@@ -1,0 +1,402 @@
+!SESSION 2013-06-07 11:39:18.105 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.639
+!MESSAGE System property http.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.644
+!MESSAGE System property http.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.644
+!MESSAGE System property https.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.645
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.650
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.651
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.652
+!MESSAGE System property https.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.653
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.653
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.654
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.655
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 11:39:29.655
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-06-07 11:47:22.154
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:820)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	... 9 more
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 985 2013-06-07 11:47:22.156
+!MESSAGE Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-06-07 11:47:29.836
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:820)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	... 9 more
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 985 2013-06-07 11:47:29.837
+!MESSAGE Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-06-07 11:47:37.247
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:820)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	... 9 more
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 985 2013-06-07 11:47:37.247
+!MESSAGE Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Object.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:643)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2013-06-07 12:29:34.655 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.095
+!MESSAGE System property http.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.100
+!MESSAGE System property http.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.101
+!MESSAGE System property https.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.101
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.102
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.103
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.104
+!MESSAGE System property https.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.105
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.105
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.106
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.106
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 12:29:38.107
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-06-07 12:43:30.586
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/String.html
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:820)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:995)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/String.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	... 9 more
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/String.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:995)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 985 2013-06-07 12:43:30.588
+!MESSAGE Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/String.html
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/String.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:995)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-06-07 12:43:40.573
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Override.html
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:820)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:995)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Override.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	... 9 more
+Caused by: java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Override.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:995)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 985 2013-06-07 12:43:40.574
+!MESSAGE Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Override.html
+!STACK 0
+java.io.IOException: Server returned HTTP response code: 407 for URL: http://download.oracle.com/javase/6/docs/api/java/lang/Override.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:765)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:995)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SESSION 2013-06-07 14:21:29.472 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.530
+!MESSAGE System property http.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.534
+!MESSAGE System property http.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.535
+!MESSAGE System property https.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.536
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.536
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.537
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.538
+!MESSAGE System property https.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.539
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.539
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.540
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.541
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:21:33.541
+!MESSAGE System property socksProxyPort is not set but should be 80.
+!SESSION 2013-06-07 14:24:19.351 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product -data C:\Users\eklavya\Documents\vclab_workspace -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.665
+!MESSAGE System property http.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.670
+!MESSAGE System property http.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.671
+!MESSAGE System property https.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.671
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.672
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.672
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.675
+!MESSAGE System property https.proxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.676
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.677
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.677
+!MESSAGE System property socksProxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.678
+!MESSAGE System property socksProxyHost is not set but should be proxy.cse.iitb.ac.in.
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-07 14:24:22.679
+!MESSAGE System property socksProxyPort is not set but should be 80.
