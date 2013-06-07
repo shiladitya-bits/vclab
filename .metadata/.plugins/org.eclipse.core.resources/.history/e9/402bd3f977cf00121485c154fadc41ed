@@ -47,13 +47,8 @@ public class HomePage implements Screen {
 
 	@Override
 	public void resize(int width, int height) {
-		Vector2 size = Scaling.fit.apply(800, 480, width, height);
-        int viewportX = (int)(width - size.x) / 2;
-        int viewportY = (int)(height - size.y) / 2;
-        int viewportWidth = (int)size.x;
-        int viewportHeight = (int)size.y;
-        Gdx.gl.glViewport(viewportX, viewportY, viewportWidth, viewportHeight);
-        stage.setViewport(800, 480, true, viewportX, viewportY, viewportWidth, viewportHeight);
+        stage.setViewport(800, 480, true);
+        stage.getCamera().translate(-stage.getGutterWidth(), -stage.getGutterHeight(), 0);
 
 		}
 
